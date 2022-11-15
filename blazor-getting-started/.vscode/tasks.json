@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/blazor-getting-started/BethanysPieShopHMR.App/BethanysPieShopHMR.App.csproj",
+                "${workspaceFolder}/BethanysPieShopHRM.Api/BethanysPieShopHRM.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/blazor-getting-started/BethanysPieShopHMR.App/BethanysPieShopHMR.App.csproj",
+                "${workspaceFolder}/BethanysPieShopHRM.Api/BethanysPieShopHRM.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/blazor-getting-started/BethanysPieShopHMR.App/BethanysPieShopHMR.App.csproj"
+                "${workspaceFolder}/BethanysPieShopHRM.Api/BethanysPieShopHRM.Api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
