@@ -22,8 +22,10 @@ else
             @foreach (var employee in Employees)
             {
                 <tr>
-                    <td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{employee.EmployeeId}-small.jpg")"
-                    class="rounded-circle" /></td>
+                    <td>
+                        <img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{employee.EmployeeId}-small.jpg")"
+                     class="rounded-circle" />
+                    </td>
                     <td>@employee.EmployeeId</td>
                     <td>@employee.FirstName</td>
                     <td>@employee.LastName</td>
@@ -40,3 +42,6 @@ else
         </tbody>
     </table>
 }
+
+<button @onclick="@QuickAddEmployee" class="btn btn-dark table-btn quick-add-btn">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+<AddEmployeeDialog @ref="AddEmployeeDialog" ClosedCallback="@UpdateEmployees"></AddEmployeeDialog> 
